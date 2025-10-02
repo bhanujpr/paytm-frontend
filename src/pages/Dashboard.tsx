@@ -12,7 +12,7 @@ const Dashboard: React.FC = () => {
     const token = localStorage.getItem("token")
     console.log(token)
     async function fetchData(){
-     const res = await axios.get('http://localhost:3000/api/v1/user/details',{
+     const res = await axios.get('https://paytm-backend-2ar9.onrender.com/api/v1/user/details',{
         headers:{
           authorization:localStorage.getItem("token")
         }
